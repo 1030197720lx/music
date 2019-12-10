@@ -1,5 +1,8 @@
 package com.music.upload.dto;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class MusicInfo {
     private Integer id;
 
