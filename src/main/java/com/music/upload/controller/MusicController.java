@@ -18,7 +18,6 @@ public class MusicController {
     public MusicInfo query(){
         System.out.println();
         MusicInfo musicInfo =  musicInfoMapper.selectByPrimaryKey(1);
-
         return musicInfo;
     }
 }

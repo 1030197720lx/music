@@ -36,13 +36,13 @@
             <property name="enableSubPackages" value="true" />
         </javaClientGenerator>
 
-        <table tableName="music_info" domainObjectName="MusicInfo" modelType="flat" enableSelectByExample="false" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false">
+        <table tableName="user_info" domainObjectName="UserInfo" modelType="flat" enableSelectByExample="false" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="false">
             <!-- 使用表中字段名作为实体属性名；若为false则表中字段带下划线，对应实体属性为驼峰命名 -->
             <property name="id" value="true"/>
-            <property name="musicName" value="true"/>
-            <property name="author" value="true"/>
-            <property name="provider" value="true"/>
-            <property name="address" value="true"/>
+            <property name="userName" value="true"/>
+            <property name="passWord" value="true"/>
+            <property name="mobile" value="true"/>
+
         </table>
 
     </context>

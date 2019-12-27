@@ -2,6 +2,8 @@ package com.music.upload.dto;
 
 import org.springframework.stereotype.Component;
 
+import java.sql.Timestamp;
+
 @Component
 public class MusicInfo {
     private Integer id;
@@ -12,7 +14,11 @@ public class MusicInfo {
 
     private String address;
 
-    private Integer provider;
+    private String album;
+
+    private Integer user_id;
+
+    private Timestamp upload_date;
 
     public Integer getId() {
         return id;
@@ -46,11 +52,28 @@ public class MusicInfo {
         this.address = address == null ? null : address.trim();
     }
 
-    public Integer getProvider() {
-        return provider;
+
+    public String getAlbum() {
+        return album;
     }
 
-    public void setProvider(Integer provider) {
-        this.provider = provider;
+    public void setAlbum(String album) {
+        this.album = album;
+    }
+
+    public Integer getUser_id() {
+        return user_id;
+    }
+
+    public void setUser_id(Integer user_id) {
+        this.user_id = user_id;
+    }
+
+    public Timestamp getUpload_date() {
+        return upload_date;
+    }
+
+    public void setUpload_date(Timestamp upload_date) {
+        this.upload_date = upload_date;
     }
 }
