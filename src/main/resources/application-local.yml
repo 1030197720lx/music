@@ -7,6 +7,8 @@ spring:
     password: 123456
     url: jdbc:mysql://localhost:3306/music?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
     driver-class-name: com.mysql.jdbc.Driver
+  thymeleaf:
+    cache: false
 
 mybatis:
   mapper-locations: classpath:mapping/*Mapper.xml
@@ -18,3 +20,7 @@ logging:
     com:
       example:
         mapper : debug
+
+multipart:
+  maxFileSize: 50M
+  maxRequestSize: 50M
